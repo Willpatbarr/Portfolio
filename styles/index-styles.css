@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--secondary-color); /* optional: background to make it pop */
+    margin: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+#hero-div {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    position: relative;
+    height: 100vh;
+}
+
+#hero-img {
+    grid-row: 1 / 6;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero-overlay {
+    grid-row: 2 / 3;
+    place-self: center;
+    z-index: 2;
+    text-align: center;
+    color: var(--header-on-dark);
+    font-family: var(--header-font);
+    font-size: var(--header-size);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+}
+
+#featured-projects {
+    grid-row: 3 / 8;
+    z-index: 3;
+    display: flex;
+    justify-content: space-around; /* or space-between if you prefer */
+    gap: 2rem; /* creates spacing between each card */
+    margin-left: 15rem;
+    margin-right: 15rem;
+    background-color: transparent; /* remove background from parent if each card has one */
+    height: 100%;
+}
+
+.featured-project {
+    flex: 1;
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.featured-project:hover {
+    transform: translateY(-10px); /* optional lift effect */
+}
+
+.featured-project-screenshot {
+    /* height: 80%; */
+    max-width: 300px;
+    border-radius: 6px;
+    grid-row: 3 / 8;
+}

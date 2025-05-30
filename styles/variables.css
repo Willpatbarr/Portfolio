@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root {
+    /* fonts */
+    /* --nav-font: 'Host Grotesk'; */
+    --nav-font: 'Roboto Mono';
+    /* --header-font: 'Roboto Mono'; */
+    --header-font: 'Host Grotesk';
+    --paragraph-font: Arial;
+
+    --nav-size: 1.15rem;
+    --header-size: 1.5rem;
+    --paragraph-size: 1rem;
+
+    /* colors template */
+    --black-olive:  #334139ff;
+    --lapis-lazuli: #336699ff;
+    --floral-white: rgb(252, 252, 238);
+    --white:        white;
+    --primary-color: var(--black-olive);
+    --secondary-color: var(--floral-white);
+    --accent-color-1: var(--lapis-lazuli);
+    --accent-color-2: ;
+
+    /* colors application */
+    --background-color-light: var(--secondary-color);
+    --background-color-light: ;
+    --nav-on-dark: var(--white);
+    --nav-on-light: var(--primary-color);
+    --header-on-dark: var(--white);
+    --header-on-light: var(--primary-color);
+    --paragraph-on-dark: var(--secondary-color);
+    --paragraph-on-light: var(--primary-color);
+}
