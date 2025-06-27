@@ -29,4 +29,10 @@ nav ul li a {
     text-decoration: none;
     color: var(--nav-on-dark);
     font-size: var(--nav-size);
+    padding: 1rem;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: var(--secondary-color);
 }
