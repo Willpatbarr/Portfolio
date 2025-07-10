@@ -28,7 +28,7 @@
     /* colors application */
     --background-color-light: var(--secondary-color);
     --background-color-light: ;
-    --nav-on-dark: var(--white);
+    --nav-on-dark: var(--floral-white);
     --nav-on-light: var(--primary-color);
     --header-on-dark: var(--white);
     --header-on-light: var(--primary-color);

@@ -1,4 +1,4 @@
-
+@import "general-styles.css";
 
 main {
     font-family: var(--paragraph-font);
@@ -12,6 +12,7 @@ h1 {
     font-size: var(--header-size);
     color: var(--header-on-light);
     text-align: center;
+    
 }
 
 .contact-links {
@@ -19,11 +20,16 @@ h1 {
     text-align: center;
 }
 
+.contact-button {
+    width: 20rem;
+    margin: 0.5rem;
+}
+
 .contact-links a {
     display: inline-block;
     margin: 0.5rem;
     font-size: 1.1rem;
-    color: var(--primary-color);
+    color: var(--header-on-dark);
     text-decoration: none;
 }
 

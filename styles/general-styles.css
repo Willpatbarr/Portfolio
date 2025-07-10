@@ -1,0 +1,15 @@
+@import "variables.css";
+@import "nav-styles.css";
+@import "footer-styles.css";
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--secondary-color); /* optional: background to make it pop */
+    margin: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
