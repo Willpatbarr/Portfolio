@@ -26,3 +26,16 @@
 .footer-inline a:hover {
     opacity: 0.7;
 }
+
+@media (max-width: 768px) {
+    .footer-inline {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .footer-inline a,
+    .footer-inline span {
+      font-size: 0.95rem;
+    }
+}
+  
