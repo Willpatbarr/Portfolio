@@ -25,16 +25,20 @@ function renderProjects() {
         tile.classList.add("proj-tile");
     
         tile.innerHTML = `
-            <h3 class="proj-title">${project.title}</h3>
-            <img class="proj-img" src="${project.imageSrc}" alt="Screenshot of ${project.title}">
-            <p class="proj-short-desc">${project.shortDescr}</p>
-            ${project.languages || project.frameworks ? `
+            <div class="image-wrapper">
+                <img class="proj-img" src="${project.imageSrc}" alt="Screenshot of ${project.title}">
+            </div>
+            <div class="project-content">
+                <h3 class="proj-title">${project.title}</h3>
+                <p class="proj-short-desc">${project.shortDescr}</p>
+                ${project.languages || project.frameworks ? `
                 <div class="proj-tags">
                     ${project.languages ? `<p class="language">${project.languages}</p>` : ""}
                     ${project.frameworks ? `<p class="frameworks">${project.frameworks}</p>` : ""}
                 </div>
-            ` : ""}
-        `;
+                ` : ""}
+            </div>
+            `;
     
         link.appendChild(tile);
         container.appendChild(link);

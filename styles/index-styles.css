@@ -4,7 +4,7 @@
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     position: relative;
-    height: 100vh;
+    height: 40vh;
 }
 
 #hero-img {
@@ -32,19 +32,34 @@
     border-radius: 8px;
 }
 
+/* #featured-projects {
+    grid-row: 3 / 7;
+    z-index: 3;
+    display: flex;
+    justify-content: space-around; 
+    gap: 2rem; 
+    margin-left: 15rem;
+    margin-right: 15rem;
+    background-color: transparent; 
+    height: 100%;
+    color: var(--floral-white);
+    font-family: var(--header-font);
+} */
+
 #featured-projects {
     grid-row: 3 / 7;
     z-index: 3;
     display: flex;
-    justify-content: space-around; /* or space-between if you prefer */
-    gap: 2rem; /* creates spacing between each card */
-    margin-left: 15rem;
-    margin-right: 15rem;
-    background-color: transparent; /* remove background from parent if each card has one */
-    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-inline: clamp(1rem, 8vw, 10rem);
+    margin-top: -5rem;
+    padding: 2rem 0;
     color: var(--floral-white);
     font-family: var(--header-font);
 }
+
 
 #featured-projects h3 {
     font-family: var(--nav-font)
@@ -62,6 +77,13 @@
     /* overflow: hidden; */
     max-height: 30rem;
 }
+
+.featured-project {
+    flex: 1 1 300px; /* grow/shrink, base size */
+    max-width: 40rem;
+}
+
+
 .featured-project,
 .featured-project * {
   text-decoration: none;
@@ -97,3 +119,89 @@
     padding: 1rem;
 }
 
+.project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* for them real small windows */
+@media (max-width: 1200px) {
+    #featured-projects {
+      margin-left: 5rem;
+      margin-right: 5rem;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .featured-project {
+      width: 100%;
+    }
+  }
+  
+  /* for them even more really smaller windows */
+  @media (max-width: 768px) {
+
+    #featured-projects {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden; /* 👈 ensure no sideways scrolling */
+    }
+    
+    .featured-project {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+      width: 80vw;
+      max-width: 80vw;
+      margin: 0 auto;
+      padding: 1rem;
+      padding-top: 0.5rem;
+    }
+  
+    .image-wrapper {
+      flex: 1 1 40%;
+      max-width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .featured-project-screenshot {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+  
+    .project-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .featured-project h3,
+    .featured-project p {
+      text-align: left;
+      margin: 0;
+      padding: 0.25rem 0;
+    }
+  
+    .featured-project h3 {
+      font-size: 1.25rem;
+    }
+  
+    .featured-project p {
+      font-size: 0.95rem;
+    }
+  }
+  
+  
+  

@@ -68,3 +68,25 @@ button {
 button:hover {
     opacity: 0.9;
 }
+
+@media (max-width: 768px) {
+    main {
+      width: 100vw;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+  
+    .contact-button {
+      width: 100%;
+      max-width: 80vw;
+    }
+  
+    form {
+      width: 100%;
+      max-width: 80vw;
+      margin: 0 auto;
+    }
+  }
+  

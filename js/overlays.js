@@ -3,18 +3,31 @@
 export function createNav() {
     const navHTML = `
         <nav>
-            <ul>
+            <button id="nav-toggle" aria-label="Toggle Navigation">☰</button>
+            <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                
                 <li><a href="contact-me.html">Contact Me</a></li>
             </ul>
         </nav>
     `;
 
     document.body.insertAdjacentHTML('afterbegin', navHTML);
+
+    // Add toggle functionality
+    document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.getElementById("nav-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        if (toggle && navLinks) {
+            toggle.addEventListener("click", () => {
+                navLinks.classList.toggle("show");
+            });
+        }
+    });
 }
+
 
 export function createFooter() {
     const footerHTML = `
@@ -30,3 +43,4 @@ export function createFooter() {
 
     document.body.insertAdjacentHTML('beforeend', footerHTML);
 }
+

@@ -20,8 +20,10 @@ function renderFeaturedProjects() {
             <div class="image-wrapper">
                 <img class="featured-project-screenshot" src="${project.imageSrc}" alt="${project.imageAlt}" />
             </div>
-            <h3>${project.title}</h3>
-            <p>${project.shortDescr}</p>
+            <div class="project-content">
+                <h3>${project.title}</h3>
+                <p>${project.shortDescr}</p>
+            </div>
         `;
 
         container.appendChild(anchor);
