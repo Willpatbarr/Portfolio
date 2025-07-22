@@ -23,6 +23,7 @@ h1 {
 .contact-button {
     width: 20rem;
     margin: 0.5rem;
+    
 }
 
 .contact-links a {
@@ -61,6 +62,7 @@ button {
     cursor: pointer;
     border-radius: 4px;
     width: fit-content;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {

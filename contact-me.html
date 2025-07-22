@@ -5,13 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Me - William Barr</title>
     <link rel="stylesheet" href="styles/contact-me-styles.css" />
-    <script type="module">
-        import { createNav, createFooter } from './js/overlays.js';
-        createNav();
-        createFooter();
-    </script>
-
-    <script defer src="js/contact.js"></script>
+    <script type="module" src="js/contact.js"></script>
 </head>
 <body>
     <main>
@@ -23,12 +17,12 @@
             <button class="contact-button"><a href="https://www.linkedin.com/in/william-barr-61b1832a6" target="_blank">LinkedIn: william-barr</a></button>
         </div>
 
-        <form action="#" method="POST">
+        <form id="contact-form" method="GET">
             <label for="email">Email (required):</label>
             <input type="email" id="email" name="email" required />
 
             <label for="phone">Phone Number (optional):</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9\-+() ]*" />
+            <input type="tel" id="phone" name="phone" />
 
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5"></textarea>

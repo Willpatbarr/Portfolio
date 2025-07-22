@@ -1,1 +1,72 @@
 @import "general-styles.css";
+
+.projects-title {
+    /* margin: 0 auto; */
+    display: flex;
+    justify-self: center;
+    font-family: var(--nav-font);
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.proj-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: 30%;
+    height: 30%;
+}
+
+.proj-tile {
+    background-color: var(--primary-color);
+    color: var(--paragraph-on-dark);
+    font-family: var(--header-font);
+    
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.proj-img {
+    width: 70%;
+    height: 15rem;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 4px;
+}
+
+.proj-tags {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
+
+.proj-tags p {
+    margin: 0;
+    background-color: var(--floral-white);
+    color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+.proj-tile:hover {
+    transform: translateY(-15px); 
+}

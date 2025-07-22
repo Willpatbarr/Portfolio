@@ -32,7 +32,8 @@ export const featuredProjects = [
       imageSrc: "images/CameraCoachHomeScreenshot.PNG",
       languages: "Swift",
       frameworks: "SwiftUI",
-      isPersonal: true
+      isPersonal: true,
+      isFeatured: true
     },
 
     {
@@ -43,7 +44,8 @@ export const featuredProjects = [
       imageSrc: "images/BudgetMasterHomeScreenshot.PNG",
       languages: "Swift",
       frameworks: "SwiftUI, SwiftData",
-      isPersonal: true
+      isPersonal: true,
+      isFeatured: true
     },
 
     {
@@ -54,8 +56,56 @@ export const featuredProjects = [
       imageSrc: "images/LunarLanderScreenshot.png",
       languages: "C++",
       frameworks: "OpenGL",
-      isPersonal: false
-    }
+      isPersonal: false,
+      isFeatured: true
+    },
+
+    {
+      id: "Frogge",
+      title: "Frogge",
+      shortDescr: "An iOS app that uses Apple HealthKit to track workouts of different types",
+      fullDescr: "Using Apple HealthKit this app communicates with your apple watch to log your workouts and level up a frog for each workout type.",
+      imageSrc: "images/FroggeHomescreen.jpeg",
+      languages: "Swift",
+      frameworks: "SwiftUI, HealthKit",
+      isPersonal: false,
+      isFeatured: false
+    },
     
+    {
+      id: "MarketBase",
+      title: "Market Base",
+      shortDescr: "A protoype eCommerce market using Google Firebase",
+      fullDescr: "This app uses Google Firebase to manage eCommerce accounts for buying and selling. Just a prototype, real monetary transactions are unavailable but in the works.",
+      imageSrc: "images/MarketBaseVendorHomeScreenshot.PNG",
+      languages: "Swift",
+      frameworks: "SwiftUI, Google Firebase",
+      isPersonal: true,
+      isFeatured: false
+    },
+
+    {
+      id: "PieAgenda",
+      title: "Pie Agenda",
+      shortDescr: "A fun form factor for managing your day",
+      fullDescr: "Built for iOS or Android in a team of students. This app helps you practice time management with a pie chart for your agenda. Each hour being marked like a clock.",
+      imageSrc: "images/PieAgendaHome.webp",
+      languages: "Dart",
+      frameworks: "Flutter",
+      isPersonal: false,
+      isFeatured: false
+    },
+
+    {
+      id: "Chess",
+      title: "Chess",
+      shortDescr: "A desktop chess game built for school project",
+      fullDescr: "A desktop version of chess using C++, built in a team for school.",
+      imageSrc: "images/ChessScreenshot.png",
+      languages: "C++",
+      frameworks: "OpenGL",
+      isPersonal: false,
+      isFeatured: false
+    },
   ];
   
